@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 #include <Mascota.hpp>
+#include <Alimento.hpp>
 int main(int argc, char const *argv[])
 {
     Mascota m1;
@@ -8,9 +9,9 @@ int main(int argc, char const *argv[])
     Mascota m3;
 
     m1.Comer();
-    m2.comer();
-    m3.comer();
+    m2.Comer();
+    m3.Comer();
 
-    cout<< " Mascota "<<m1.leer energia()<<endl;
+    cout<< " Mascota "<<m1.LeerEnergia()<<endl;
     return 0;
 }
