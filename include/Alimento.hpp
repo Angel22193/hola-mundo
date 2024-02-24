@@ -9,7 +9,7 @@ class Alimento
         this ->Energia=Energia;
     }
     Alimento(){}
-    int Extraer Energia(){
+    int ExtraerEnergia(){
         return Energia;
     }
 };

@@ -1,0 +1,40 @@
+@startuml mascota
+class Mascota
+class Alimento
+class Salud
+class felicidad
+class sueño
+class tristeza
+class hambre
+class dormir
+class Comer 
+class sentimientos
+class enojado
+class frustado
+class juguete
+class tienda
+class edad 
+class ropa 
+classs color
+class vehiculos
+class Carro 
+class avion 
+class tiempo
+class  amigo 
+class  perro 
+class  limpieza
+class  sucio 
+
+
+Mascota--->Alimento
+Mascota---*Salud
+Alimento*---Comer
+Salud-->sueño
+sueño-->dormir
+Mascota--*sentimientos
+sentimientos--->felicidad
+sentimientos--->enojado
+sentimiento--->tristeza
+sentimiento--->frustado
+Comer---*hambre
+@enduml
