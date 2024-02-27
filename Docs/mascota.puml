@@ -1,5 +1,9 @@
 @startuml mascota
-class Mascota
+class Mascota{
+    - salud: Salud int
+    + Comer()
+    + dormir()
+}
 class Alimento
 class Salud
 class felicidad
@@ -15,7 +19,7 @@ class juguete
 class tienda
 class edad 
 class ropa 
-classs color
+class color
 class vehiculos
 class Carro 
 class avion 
@@ -24,17 +28,50 @@ class  amigo
 class  perro 
 class  limpieza
 class  sucio 
+class vida
+class alma
+class tipos
+class  pajaro
+class hamster
+class gato
+class perico
+class caballo
+class dueño
 
-
-Mascota--->Alimento
+dueño-->Mascota
+Mascota--->hambre
 Mascota---*Salud
-Alimento*---Comer
+hambre*---Comer
 Salud-->sueño
 sueño-->dormir
 Mascota--*sentimientos
 sentimientos--->felicidad
 sentimientos--->enojado
-sentimiento--->tristeza
-sentimiento--->frustado
-Comer---*hambre
+sentimientos--->tristeza
+sentimientos--->frustado
+Comer---*Alimento
+Mascota--->color
+vehiculos o---Mascota
+vehiculos ---*Carro
+vehiculos ---*avion
+Mascota---->tiempo
+tiempo --*Salud
+salud-->Comer
+vida-->tiempo
+vida-->alma
+tiempo--*edad
+limpieza--o salud
+sucio--o salud
+Mascota-->tipos
+tipos--*perro
+tipos--*gato 
+tipos--*perico
+tipos--*caballo
+tipos--*hamster
+tipos--*pajaro
+Mascota-->amigo
+Mascota--o ropa
+dueño--o tienda
+tienda-->ropa
+
 @enduml
