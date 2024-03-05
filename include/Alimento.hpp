@@ -3,9 +3,9 @@
 class Alimento
 {
     private:
-    int Energia;
+     int Energia;
     public:
-    Alimento(int Energia){
+        Alimento(int Energia){
         this ->Energia=Energia;
     }
     Alimento(){}

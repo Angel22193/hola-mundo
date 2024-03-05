@@ -10,8 +10,9 @@ class Dibujo
     fstream file;
 
     public:
+    Dibujo(){}
     Dibujo(string path){
-        fileopen(",/assets/kokoa.txt");
+        file.open(path);
 
     }
     ~Dibujo(){

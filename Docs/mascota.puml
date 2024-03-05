@@ -1,3 +1,4 @@
+
 @startuml mascota
 class Mascota{
     - salud: Salud int
